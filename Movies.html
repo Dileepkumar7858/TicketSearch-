@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketSearch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./icon.png">
+
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay">
+            <header>
+                <nav>
+                    <h1 class="logo">TicketSearch</h1>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./Movies.html">Movies</a></li>
+                        <li><a href="./event.html">Events</a></li>
+                        <li><a href="./Sports.html">Sports</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="movie-search" placeholder="Search movies, genres, cities...">
+                <button id="search-button">Search</button>
+            </div>
+
+
+            <!-- Featured Movies with Scrollable Grid -->
+            <section class="featured-movies">
+                <div class="info-pas">
+                    <p>Movies</p>
+                </div>
+                
+                <div class="movie-grid-container">
+                    <button class="arrow-button arrow-left" onclick="scrollLeft()"><</button>
+                    
+                    <div class="movie-grid" id="movieGrid">
+                        <!-- Movie cards -->
+                        <div class="movie-card">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNTU0ZjYxOWItOWViMC00YWVlLWJlMGUtZjc1YWU0NTlhY2ZhXkEyXkFqcGc@._V1_.jpg" alt="Salaar">
+                            <div class="movie-info">
+                                <h3>Salaar</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div>
+                        </div>
+                        <!-- Add more movie cards as needed -->
+                        <div class="movie-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Animal_%282023_film%29_poster.jpg/220px-Animal_%282023_film%29_poster.jpg" alt="Animal">
+                            <div class="movie-info">
+                                <h3>Animal</h3>
+                                <p>⭐ 7.2/10</p>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMzUwZTM1ZDEtZGViOC00YmUxLWEwNWQtNGIyMzE2NWZkYzUyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Devara">
+                            <div class="movie-info">
+                                <h3>Devara</h3>
+                                <p>⭐ 7.8/10</p>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://www.cinejosh.com/newsimg/newsmainimg/kalki-2898-ad_b_2805240934.jpg" alt="Kalki">
+                            <div class="movie-info">
+                                <h3>Kalki</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://assetscdn1.paytm.com/images/cinema/160296-ae183811-3e85-11ef-99b5-d35223c98590.jpg" alt="They call him OG">
+                            <div class="movie-info">
+                                <h3>They call him OG</h3>
+                                <p>⭐ 8.8/10</p>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://www.moviespuzzle.com/wp-content/uploads/2024/10/Pre-Release-business-for-Indias-most-awaited-sequel-3.jpg" alt="Pushpa2">
+                            <div class="movie-info">
+                                <h3>Pushpa2</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div>
+                        </div> 
+                        <div class="movie-card">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273ddc2f4d70adb8d92527ac909" alt="Coolie">
+                            <div class="movie-info">
+                                <h3>Coolie</h3>
+                                <p>⭐ 8.4/10</p>
+                            </div>
+                        </div> 
+                        <div class="movie-card">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYTE3YWNiMjUtOGRlNi00ZjdlLWI0ZmEtMTExNTBkOWY2NWJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Rolex">
+                            <div class="movie-info">
+                                <h3>Rolex</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrow-button arrow-right" onclick="scrollRight()">></button>
+                </div>
+
+
+                <div class="info-pas">
+                    <p>Up Coming Movies</p>
+                </div>
+                
+                <div class="movie-grid-container">
+                    <button class="arrow-button arrow-left" onclick="scrollLeft()"><</button>
+                    
+                    <div class="movie-grid" id="movieGrid">
+                        <!-- Movie cards -->
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MzguOEsgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00413291-wlzypcnvhg-portrait.jpg" alt="Salaar">
+                            <div class="movie-info">
+                                <h3>Gladiator 2</h3>
+                                <p> ❤ 700k</p>
+                            </div>
+                        </div>
+                        <!-- Add more movie cards as needed -->
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-NDAuMUsgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00403056-uftrqqzrmv-portrait.jpg"" alt="Animal">
+                            <div class="movie-info">
+                                <h3>Matka</h3>
+                                <p> ❤ 200k</p>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MzE5LjJLIExpa2Vz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00357490-mxshwerpkj-portrait.jpg" alt="Devara">
+                            <div class="movie-info">
+                                <h3>Kanguva</h3>
+                                <p> ❤ 30k</p>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS40LzEwICAxODguNksgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00388085-vfxxfblfqf-portrait.jpg" alt="Kalki">
+                            <div class="movie-info">
+                                <h3>Amaran</h3>
+                                <p> ❤ 325k</p>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS40LzEwICA3Ny40SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00386123-kcmnvggzbg-portrait.jpg" alt="They call him OG">
+                            <div class="movie-info">
+                                <h3>Lucky Baskhar</h3>
+                                <p> ❤ 263k</p>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC8xMCAgNjUuOUsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00383474-klabltwbvz-portrait.jpg" alt="Pushpa2">
+                            <div class="movie-info">
+                                <h3>vemon 3</h3>
+                                <p> ❤ 156k</p>
+                            </div>
+                        </div> 
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS40LzEwICAxMy4zSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00398665-uerftnybus-portrait.jpg" alt="Coolie">
+                            <div class="movie-info">
+                                <h3>The Wild Robot</h3>
+                                <p>❤  55k</p>
+                            </div>
+                        </div> 
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICAxMi4zSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00386901-ayjwrzpuue-portrait.jpg" alt="Rolex">
+                            <div class="movie-info">
+                                <h3>ME4</h3>
+                                <p>❤ 265k</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrow-button arrow-right" onclick="scrollRight()">></button>
+                </div>
+
+
+            </section>
+            <div>
+            </div>      
+        </div>
+
+    </div>
+    <footer class="footer">© 2024 TicketSearch. All rights reserved.</footer>
+        <div class="social-media-section">     
+            <div class="social-media-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <h2>Follow us on Social Media</h2>
+        </div>
+
+<script src="script.js"></script>
+</body>
+</html>

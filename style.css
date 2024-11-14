@@ -1,0 +1,368 @@
+
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: auto;
+             background: url('https://www.medianama.com/wp-content/uploads/2022/07/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg')  center center/cover;
+             position: relative;
+            
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+            height: 100%;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff5733;
+        }
+        p{
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            right: 0;
+            justify-content: right;
+        }
+
+        /* Search Bar */
+.search-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#movie-search {
+    padding: 10px;
+    width: 300px;
+    border-radius: 80px;
+    border: none;
+    outline: none;
+    font-size: 1.0rem;
+}
+
+#search-button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ff5733;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #e14e1b;
+}
+
+        /* Featured Movies */
+        .featured-movies {
+            margin-top: 50px;
+            width: 80%;
+            text-align: center;
+        }
+
+        .featured-movies h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Movie Grid Container */
+        .movie-grid-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Arrow Button Styling */
+        .arrow-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .arrow-left {
+            left: 0;
+        }
+
+        .arrow-right {
+            right: 0;
+        }
+
+        /* Movie Grid */
+        .movie-grid {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            gap: 20px;
+            padding: 0 20px;
+            -ms-overflow-style: none;
+        }
+
+        /* Hides scrollbar */
+        .movie-grid::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Movie Card */
+        .movie-card {
+            min-width: 200px;
+            background: #3a3a3a;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+            margin-bottom: 20;
+        }
+
+        /* Hover Effect on Movie Card */
+        .movie-card:hover {
+            transform: scale(1.09);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 270px;
+            object-fit:fill;
+        }
+
+        .movie-info {
+            padding: 0.5px;
+        }
+
+        .movie-info h3 {
+            font-size: 1rem;
+            margin-bottom: 0px;
+        }
+        .info-pas p{
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 10px 10px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            background-color: black;
+            justify-content: center;
+            color: rgb(247, 250, 249);
+        }
+
+        .info-pas2 p{
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 10px 10px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            background-color: black;
+            justify-content: center;
+            color: rgb(247, 250, 249);
+        }
+
+        .movie-info p {
+            font-size: 0.9rem;
+            color: #ffcc00;
+        }
+        .social-media-section{
+            background-color: black;
+            color: azure;
+            text-align: center;
+            padding: 15px;
+            
+        }
+
+        .social-media-icon {
+            display: flex;
+            justify-content: center;
+            gap: 20px auto; 
+            margin-bottom: 10px;
+            cursor: pointer;
+
+
+        }
+
+        .social-media-icons a {
+            font-size: 24px;
+            color: #6d6c6c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            border-radius: 50%;
+            gap: 20px;
+        }
+
+        .social-media-icons a:hover {
+            color: #ef782e; 
+        }
+        
+        h2 {
+            font-size: 20px;
+            color: #333;
+            margin-top: 0;
+        }
+    
+        .footer { 
+            background-color: rgb(0, 0, 0);
+            color: rgb(249, 69, 69);
+            text-align: center;
+            padding: 0.5px;
+            bottom: 0;
+            width: 100%;
+        }
+       
+
+
+        
+
+        .movie-c {
+            min-width: 200px;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .movie-c img {
+            width: 100%;
+            height: 270px;
+            object-fit:fill;
+            transition: transform 0.3s;
+        }
+        .movie-c:hover {
+            transform: scale(1.09);
+        }
+
+
+        .movie-car {
+            min-width: 200px;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .movie-car img {
+            width: 100%;
+            height: 270px;
+            object-fit:fill;
+            transition: transform 0.3s;
+        }
+        .movie-car:hover {
+            transform: scale(1.09);
+        }
+
+        .movie-car h3{
+            background-color: rgb(168, 234, 244);
+            color: black;
+
+        }
+
+        .movie-ca {
+            min-width: 200px;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .movie-ca img {
+            width: 100%;
+            height: 270px;
+            object-fit:fill;
+            transition: transform 0.3s;
+        }
+        .movie-ca:hover {
+            transform: scale(1.09);
+        }
+
+        .movie-ca h3{
+            background-color: rgb(130, 250, 144);
+            color: black;
+
+        }
+
+        .movie-c {
+            min-width: 200px;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .movie-c img {
+            width: 100%;
+            height: 270px;
+            object-fit:fill;
+            transition: transform 0.3s;
+        }
+        .movie-c:hover {
+            transform: scale(1.09);
+        }
+
+        .movie-c h3{
+            background-color: rgb(226, 250, 130);
+            color: black;
+
+        }
+
+        

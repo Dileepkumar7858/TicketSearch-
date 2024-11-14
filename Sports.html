@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketSearch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./icon.png">
+
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay">
+            <header>
+                <nav>
+                    <h1 class="logo">TicketSearch</h1>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./Movies.html">Movies</a></li>
+                        <li><a href="./event.html">Events</a></li>
+                        <li><a href="./Sports.html">Sports</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="movie-search" placeholder="Search movies, genres, cities...">
+                <button id="search-button">Search</button>
+            </div>
+
+
+            <!-- Featured Movies with Scrollable Grid -->
+            <section class="featured-movies">
+
+                <div class="info-pas">
+                    <p>Top Games and Events</p>
+                </div>
+
+                <div class="movie-grid-container">
+                    <button class="arrow-button arrow-left" onclick="scrollLeft()"><</button>
+                    
+                    <div class="movie-grid" id="movieGrid">
+                        <!-- Movie cards -->
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyOSBEZWM%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00419091-afrgsfzxpa-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Infinity Chess</h3>
+                            </div>
+                        </div>
+                        <!-- Add more movie cards as needed -->
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxIERlYyBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00323819-gfyucrjbge-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Spartan 10 KM Marathan</h3>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNCBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00415417-kqmsezmare-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Endless Horizons</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNyBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00415966-lxjjzlzwse-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Chess</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNCBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00408737-twgnmrhryz-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Tricolor Triumph</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNCBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00405757-pnnxbdckla-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Junoir Wonder</h3>
+                                
+                            </div>
+                        </div> 
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMiBEZWMgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00400167-hwsahhygka-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Run for the Ocean</h3>
+                                
+                            </div>
+                        </div> 
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyOSBEZWMgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00418027-cpuxvufkbj-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Resolution Virtual</h3>
+                                
+                            </div>
+                        </div>
+                        <button class="arrow-button arrow-right" onclick="scrollRight()">></button>
+                    </div>
+                </div>
+
+
+                <div class="info-pas">
+                    <p>Expolre Fun Activities</p>
+                </div>
+
+                <div class="movie-grid-container">
+                    <button class="arrow-button arrow-left" onclick="scrollLeft()"><</button>
+                    
+                    <div class="movie-grid" id="movieGrid">
+                        <!-- Movie cards -->
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00401319-ahtusxlvja-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Surendraputi</h3>
+                            </div>
+                        </div>
+                        <!-- Add more movie cards as needed -->
+                        <div class="movie-card">
+                           <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCAxNCBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00343461-fhpqfrygan-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Snow Kingdom</h3>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                          <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00367971-fytddzvqds-portrait.jpg" alt="" >
+                          <div class="movie-info">
+                                <h3>Day Outing</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00406408-wxmwrqzhgj-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>The Hidden Castel</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                          <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00402638-blmjqwnghd-portrait.jpg" alt="">
+                          <div class="movie-info">
+                                <h3>Jalavihar Water Park</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                           <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00403515-wacvkdcqjh-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Wild Water Adventure</h3>
+                                
+                            </div>
+                        </div> 
+                        <div class="movie-card">
+                           <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCAxNCBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00364435-mtvvkmdfwh-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Explore @flyZone</h3>
+                                
+                            </div>
+                        </div> 
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNiBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00408862-rkhuudelka-portrait.jpg" alt="">
+                            <div class="movie-info">
+                                <h3>Ananthagiri Camping</h3>
+                                
+                            </div>
+                        </div>
+                        <button class="arrow-button arrow-right" onclick="scrollRight()">></button>
+                    </div>
+                </div>
+
+            </section>
+            <div>
+            </div>      
+        </div>
+
+    </div>
+    <footer class="footer">© 2024 TicketSearch. All rights reserved.</footer>
+        <div class="social-media-section">     
+            <div class="social-media-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <h2>Follow us on Social Media</h2>
+        </div>
+
+<script src="script.js"></script>
+</body>
+</html>

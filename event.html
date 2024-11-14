@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketSearch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./icon.png">
+
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay">
+            <header>
+                <nav>
+                    <h1 class="logo">TicketSearch</h1>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./Movies.html">Movies</a></li>
+                        <li><a href="./event.html">Events</a></li>
+                        <li><a href="./Sports.html">Sports</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="movie-search" placeholder="Search movies, genres, cities...">
+                <button id="search-button">Search</button>
+            </div>
+
+
+            <!-- Featured Movies with Scrollable Grid -->
+            <section class="featured-movies">
+
+                <div class="info-pas">
+                    <p>THe Best of the Events</p>
+                </div>            
+                <!-- <p>Discover more movies, events, and cities at TicketSearch</p>
+                <a href="#" class="see-more-link">See More</a> -->
+                <div class="movie-grid-container">
+                    <button class="arrow-button arrow-left" onclick="scrollLeft()"><</button>
+                    
+                    <div class="movie-grid" id="movieGrid">
+                        <!-- Movie cards -->
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MzArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/arts-crafts-collection-202211140440.png" alt="Salaar">
+                            <!-- <div class="movie-info">
+                                <h3>Salaar</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div> -->
+                        </div>
+                        <!-- Add more movie cards as needed -->
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NSBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/interactive-games-collection-202211140440.png" alt="Animal">
+                            <!-- <div class="movie-info">
+                                <h3>Animal</h3>
+                                <p>⭐ 7.2/10</p>
+                            </div> -->
+                        </div>
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/upskill-collection-202211140440.png" alt="Devara">
+                            <!-- <div class="movie-info">
+                                <h3>Devara</h3>
+                                <p>⭐ 7.8/10</p>
+                            </div> -->
+                        </div>
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NDUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png" alt="Kalki">
+                            <!-- <div class="movie-info">
+                                <h3>Kalki</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div> -->
+                        </div>
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-ODUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png" alt="They call him OG">
+                            <!-- <div class="movie-info">
+                                <h3>They call him OG</h3>
+                                <p>⭐ 8.8/10</p>
+                            </div> -->
+                        </div>
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-kids-collection-202404190106.png" alt="Pushpa2">
+                            <!-- <div class="movie-info">
+                                <h3>Pushpa2</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div> -->
+                        </div> 
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-amusement-park-collection-202404190106.png" alt="Coolie">
+                            <!-- <div class="movie-info">
+                                <h3>Coolie</h3>
+                                <p>⭐ 8.4/10</p>
+                            </div> -->
+                        </div> 
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NjArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png" alt="Rolex">
+                            <!-- <div class="movie-info">
+                                <h3>Rolex</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <button class="arrow-button arrow-right" onclick="scrollRight()">></button>
+                </div>
+
+
+                <div class="info-pas">
+                    <p>Out Door Events</p>
+                </div>            
+                <!-- <p>Discover more movies, events, and cities at TicketSearch</p>
+                <a href="#" class="see-more-link">See More</a> -->
+                <div class="movie-grid-container">
+                    <button class="arrow-button arrow-left" onclick="scrollLeft()"><</button>
+                    
+                    <div class="movie-grid" id="movieGrid">
+                        <!-- Movie cards -->
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNyBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00412288-vgftwxxgek-portrait.jpg" alt="Salaar">
+                            <!-- <div class="movie-info">
+                                <h3>Salaar</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div> -->
+                        </div>
+                        <!-- Add more movie cards as needed -->
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00402180-efbnwxbggz-portrait.jpg" alt="Animal">
+                            <!-- <div class="movie-info">
+                                <h3>Animal</h3>
+                                <p>⭐ 7.2/10</p>
+                            </div> -->
+                        </div>
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNCBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00342542-kjefhywnut-portrait.jpg" alt="Devara">
+                            <!-- <div class="movie-info">
+                                <h3>Devara</h3>
+                                <p>⭐ 7.8/10</p
+                            </div> -->
+                        </div>
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCAxNCBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00304533-ncwmbtpsap-portrait.jpg" alt="Kalki">
+                            <!-- <div class="movie-info">
+                                <h3>Kalki</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div> -->
+                        </div>
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAzMSBEZWM%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00417562-ehumzbmkqj-portrait.jpg" alt="They call him OG">
+                            <!-- <div class="movie-info">
+                                <h3>They call him OG</h3>
+                                <p>⭐ 8.8/10</p>
+                            </div> -->
+                        </div>
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMiBKYW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00376688-mfpcqdpefb-portrait.jpg" alt="Pushpa2">
+                            <!-- <div class="movie-info">
+                                <h3>Pushpa2</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div> -->
+                        </div> 
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00063786-vneryrykcp-portrait.jpg" alt="Coolie">
+                            <!-- <div class="movie-info">
+                                <h3>Coolie</h3>
+                                <p>⭐ 8.4/10</p>
+                            </div> -->
+                        </div> 
+                        <div class="movie-c">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAyNyBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00357779-afhqjpmabf-portrait.jpg" alt="Rolex">
+                            <!-- <div class="movie-info">
+                                <h3>Rolex</h3>
+                                <p>⭐ 8.2/10</p>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <button class="arrow-button arrow-right" onclick="scrollRight()">></button>
+                </div>
+
+            </section>
+            <div>
+            </div>      
+        </div>
+
+    </div>
+    <footer class="footer">© 2024 TicketSearch. All rights reserved.</footer>
+        <div class="social-media-section">     
+            <div class="social-media-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <h2>Follow us on Social Media</h2>
+        </div>
+
+<script src="script.js"></script>
+</body>
+</html>
